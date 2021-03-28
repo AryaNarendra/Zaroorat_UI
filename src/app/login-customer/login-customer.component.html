@@ -1,57 +1,33 @@
-<!-- start site-wrapper -->
-<div class="site-wrapper">
-
-  <!-- start site-wrapper-inner -->
-  <div class="site-wrapper-inner clearfix">
-
-      <!-- start cover-container -->
-      <div class="cover-container container">
-
-          <!-- start inner cover -->
-          <div class="inner cover clearfix">
-              <div class="col-xs-12 col-sm-6 intro-cont">
-                  <h1 class="page-intro">Welcome to ZAROORAT..</h1>
-                  <div>
-                  <p><strong><a href="">      </a></strong></p>  </div>
-                  <a href="#" class="btn signup"><b>Sign Up</b></a>
-                <p><strong><a href=""></a></strong></p>  
-              </div>
-              <div class="col-xs-12 col-sm-5 col-sm-offset-1 sign-in-outer">
-                <div class="sign-in-wrap">
-                <h2 class="form-heading"><b>Sign In</b></h2>
-                  <form class="row" method="post" action="." id="login-form">
-                              <div class="input-group">
-                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                              <input tabindex="1" class="form-control input-lg" name="email" type="text" size="30" maxlength="100" title="Email" placeholder="Email" value="">
-                    </div>
-                              <div class="input-group">
-                                <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input tabindex="1" class="form-control input-lg" name="password" type="password" size="30" maxlength="100" title="Password" placeholder="password" value="">
-                    </div>
-
-
-                          <input class="btn" type="submit" value="Sign In" title="Sign In" tabindex="3">
-
-                      <a class="reset" tabindex="4" href="/ecms/reset.php"><b>Forgot password?</b></a>
-                  </form>
-                </div>
-                
-                <div class="social-login clearfix">
-                  <p><b>- or sign in with -</b></p>
-                  <ul class="social-buttons">
-                    <li><a href="" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  
-                  </ul>
-                </div>
-              </div>
-          </div>
-          <!-- end inner cover -->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple login form with social login buttons using HTML and CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="login-form">
+    <form>
+      <h1>Login</h1>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="E-mail Address">
+        <span class="input-icon"><i class="fa fa-envelope"></i></span>
       </div>
-      <!-- end cover-container -->
-
+      <div class="form-group">
+        <input type="password" name="psw" placeholder="Password">
+        <span class="input-icon"><i class="fa fa-lock"></i></span>
+      </div>      
+      <button class="login-btn">Login</button>      
+      <a class="reset-psw" href="#">Forgot your password?</a>
+      <div class="seperator"><b>or</b></div>
+      <p>Sign in with your social media account</p>
+      <!-- Social login buttons -->
+      <div class="social-icon">
+        <button type="button"><i class="fa fa-facebook"></i></button>
+        <button type="button"><i class="fa fa-google"></i></button>
+      </div>
+    </form>
   </div>
-  <!-- end site-wrapper-inner -->
-
-</div>
-<!-- end site-wrapper -->
+</body>
+</html>

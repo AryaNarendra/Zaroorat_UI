@@ -7,7 +7,6 @@
 	<h2><div class="page-intro"><b> Aapki sewa mein...</b></div></h2>
 	<input  type="text" class="form-control" name="search"  placeholder="Search for services.." [(ngModel)]="searchString"/>
 
-
 <main class="page-content">
 	
 	<div class="card" *ngFor="let service of services | servicesearch :  {serviceName : searchString}; let i = index">
@@ -17,7 +16,7 @@
 	
 		<h2 class="title">{{service.serviceName}}</h2>
 		<p class="copy"></p>
-		<button class="btn">Book Now</button>
+		<button class="btn" (click)="book(service.serviceId, service.serviceName)">Book Now</button>
 	  </div>
 	</div>
 	
