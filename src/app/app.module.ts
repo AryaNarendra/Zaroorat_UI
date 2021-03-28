@@ -17,6 +17,8 @@ import { HeaderComponent } from './header/header.component';
 import { ZarooratService } from './zaroorat.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ServicesearchPipe } from './servicesearch.pipe';
+import { BookingComponent } from './booking/booking.component';
+import { ProfessionalService } from './professional.service';
 
 const appRoutes: Routes = [
   {path:'customer',component:CustomerComponent,
@@ -27,6 +29,7 @@ children : [   ]},
 {path:'',component:DashboardComponent},
 {path:'login-customer',component:LoginCustomerComponent},
 {path:'login-vendor',component:LoginProfessionalComponent},
+{path:'booking',component:BookingComponent}
   // {
   //     path: 'dashboard',
   //     component: DashboardComponent
@@ -44,7 +47,8 @@ children : [   ]},
     CustomerHistoryComponent,
     ProfessionalHistoryComponent,
     HeaderComponent,
-    ServicesearchPipe
+    ServicesearchPipe,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,10 @@ children : [   ]},
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ZarooratService],
+  providers: [ZarooratService, ProfessionalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+

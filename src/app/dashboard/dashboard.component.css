@@ -208,6 +208,31 @@ background-size: 300px 250px;
   line-height: 1.35;
 }
 
+/* input[type=btn]{
+
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+input[type=btn]:hover{
+  background-color: #0d0d0d;
+}
+
+input[type=btn]:focus{
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+
+} */
+
 .btn {
   cursor: pointer;
   margin-top: 1.5rem;
@@ -221,6 +246,9 @@ background-size: 300px 250px;
   background-color: black;
   border: none;
 }
+
+
+
 .btn:hover {
   background-color: #0d0d0d;
 }

@@ -1,8 +1,0 @@
-{
-    "/api/*": {
-      "target": "http://zarooratdev-env.eba-j8sb4n2i.ap-south-1.elasticbeanstalk.com",
-      "secure": false,
-      "logLevel": "debug",
-      "changeOrigin": true
-    }
-  }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Services } from '@angular/core/src/view';
+import { Router } from '@angular/router';
 import { ZarooratService } from '../zaroorat.service';
 
 @Component({
@@ -10,7 +11,17 @@ import { ZarooratService } from '../zaroorat.service';
 export class DashboardComponent implements OnInit {
 
   services : Services[];
-  constructor(private zarooratService: ZarooratService) { }
+  constructor(private zarooratService: ZarooratService, private router : Router) { }
+
+  
+
+  book(serviceId, serviceName){
+    localStorage.setItem("serviceId",serviceId)
+    localStorage.setItem("serviceName",serviceName)
+    this.router.navigate(['/booking']);
+    // console.log(serviceId);
+    // console.log(serviceName);
+  }
 
   ngOnInit() {
 

@@ -8,12 +8,13 @@ import 'rxjs/Rx';
 @Injectable()
 export class ZarooratService {
 
+  ROOT_URL : String = "http://zarooratdev-env.eba-j8sb4n2i.ap-south-1.elasticbeanstalk.com/api";
   constructor(private http: HttpClient) { }
   // getServices() : Observable<Services[]> {
   //   return this.http.get<Services[]>('/allServices')
   // }
   getServices() : Observable<Services[]> {
-    return this.http.get<Services[]>('/api/allServices')
+    return this.http.get<Services[]>(this.ROOT_URL+'/allServices')
   }
   // getServices() : Observable<Services[]> {
   //   return this.http.get('http://zarooratdev-env.eba-j8sb4n2i.ap-south-1.elasticbeanstalk.com/allServices')
