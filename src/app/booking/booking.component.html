@@ -9,37 +9,61 @@
 	  <div class="search-bar">
 	   <input type="text" placeholder="Search Service" />
 	  </div>
+<div><h1></h1></div>
+
 	</div>
 	</div>
 	<div class="service-slide">
 	 <div class="service js-flickity" data-flickity-options='{ "wrapAround": true }'>
-	  <div class="service-cell">
-	   <div class="service-img">
-		<img src="\assets\painter.jpg" class="service-photo">
-	   </div>
-	   <div class="service-content">
-		<div class="service-title" >{{professional.profession}}</div>
-		<div class="service-author"></div>
-		<div class="rate">
-		 <fieldset class="rating">
-		  <input type="checkbox" id="star5" name="rating" value="5" />
-		  <label class="full" for="star5"></label>
-		  <input type="checkbox" id="star4" name="rating" value="4" />
-		  <label class="full" for="star4"></label>
-		  <input type="checkbox" id="star3" name="rating" value="3" />
-		  <label class="full" for="star3"></label>
-		  <input type="checkbox" id="star2" name="rating" value="2" />
-		  <label class="full" for="star2"></label>
-		  <input type="checkbox" id="star1" name="rating" value="1" />
-		  <label class="full" for="star1"></label>
-		 </fieldset>
-		 <span class="service-voters">1.987 voters</span>
+
+
+		<div class="card" *ngFor="let p of prof ">
+
+			<div class="service-cell">
+				<div class="service-img">
+				 <img src="\assets\painter.jpg" class="service-photo">
+				</div>
+				<div class="service-content">
+				 <div class="service-title" >Name: {{p.name}}</div>
+				 <div class="service-title" >Address: {{p.address}}</div>
+				 <div class="service-title" >City: {{p.city}}</div>
+				 <div class="service-title" >Contact No: {{p.contactNo}}</div>
+				 <div class="service-title" >Email Id: {{p.emailId}}</div>
+				 
+				 <!-- <div class="service-author"></div> -->
+				 <div class="rate">
+				  <fieldset class="rating">
+				   <input type="checkbox" id="star5" name="rating" value="5" />
+				   <label class="full" for="star5"></label>
+				   <input type="checkbox" id="star4" name="rating" value="4" />
+				   <label class="full" for="star4"></label>
+				   <input type="checkbox" id="star3" name="rating" value="3" />
+				   <label class="full" for="star3"></label>
+				   <input type="checkbox" id="star2" name="rating" value="2" />
+				   <label class="full" for="star2"></label>
+				   <input type="checkbox" id="star1" name="rating" value="1" />
+				   <label class="full" for="star1"></label>
+				  </fieldset>
+				  <span class="service-voters">{{p.rating}}</span>
+				 <!-- <div class="service-sum">Has 10 years of experience and has excellent reiews.</div> -->
+				 <div class="service-see">Book for service</div>
+			   </div>
+
+			<!-- <p class="profile-ratings">
+				<i class="fas fa-paint-roller col-yellow"></i></p>
+		  <div class="content">
+		
+			<h2 class="title">{{service.serviceName}}</h2>
+			<p class="copy"></p>
+			<button class="btn" (click)="book(service.serviceId, service.serviceName)">Book Now</button>
+		  </div> -->
 		</div>
-		<div class="service-sum">Has 10 years of experience and has excellent reiews.</div>
-		<div class="service-see">Book for service</div>
-	   </div>
-	  </div>
-	  <div class="service-cell">
+
+
+	 
+
+
+	  <!-- <div class="service-cell">
 	   <div class="service-img">
 		<img src="\assets\electrician.jpg" alt="" class="service-photo">
 	   </div>
@@ -142,7 +166,7 @@
 		<div class="service-sum">Louisa Clark is no longer just an ordinary girl living an ordinary life. After the transformative six months spent.</div>
 		<div class="service-see service-purple">See The service</div>
 	   </div>
-	  </div>
+	  </div> -->
 	 </div>
 	</div>
 	</div>
