@@ -25,16 +25,16 @@ body {
 .back{
   position: relative;
   margin-top: 1px;
-  height: 250vh;
+  height: 140vh;
   /* overflow: hidden; */
-  background: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/back6.jpg") no-repeat;
+  background: url("/assets/back6.jpg") no-repeat;
   background-size: cover;
   
 }
 .logo { 
   width: 200px; 
   height: 200px; 
-  background : url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/Zaroorat.png"); 
+  background : url("/assets/Zaroorat.png"); 
   position: absolute; 
   top: 12pt; 
   left: 20pt; 
@@ -56,6 +56,16 @@ body {
 .input{
   text-align: right;
 }
+.login{
+  color:rgb(247, 247, 252);
+  font-style: italic;
+  font-weight: 200;
+  font-size: 25px;
+  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-left:700px;
+  cursor:pointer;
+}
 .form-control{
   color:rgb(3, 3, 3);
   opacity: 0.5;
@@ -67,17 +77,14 @@ body {
   font-size: 18px;
   
 }
-.page-content {
-  
+.page-content { 
   display: grid;
   grid-gap: 1rem;
-  padding: 1rem;
+  padding-left: 190px;
   max-width: 900px;
-  margin: 0 auto;
   font: cursive;
-	
-
 }
+
 @media (min-width: 600px) {
   .page-content {
     grid-template-columns: repeat(2, 1fr);
@@ -147,36 +154,36 @@ body {
   background: #3b5998;
 } */
  .card:nth-child(1):before {
-  background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/painter.png") ;
+  background-image: url("/assets/painter.png") ;
   background-size: 300px 250px;
 } 
 .card:nth-child(2):before {
-  background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/plumber.png");
+  background-image: url("/assets/plumber.png");
   background-size: 250px 250px;
 }
 .card:nth-child(3):before {
-  background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/acrepair.png");
+  background-image: url("/assets/acrepair.png");
   background-size: 300px 250px;
 }
 .card:nth-child(4):before {
-  background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/carpainter.png");
+  background-image: url("/assets/carpainter.png");
   background-size: 300px 300px;
 }
 .card:nth-child(5):before {
-	background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/maid.png");
+	background-image: url("/assets/maid.png");
   background-size: 300px 300px;
 }
 .card:nth-child(6):before {
-background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/electrician.png");
+background-image: url("/assets/electrician.png");
 background-size: 300px 250px;
 }
 
 .card:nth-child(7):before {
-background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/milkman.png");
+background-image: url("/assets/milkman.png");
 background-size: 300px 250px;
 }
 .card:nth-child(8):before {
-	background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/pestcontrol.png");
+	background-image: url("/assets/pestcontrol.png");
   background-size: 300px 250px;
 }
 	
@@ -208,31 +215,6 @@ background-size: 300px 250px;
   line-height: 1.35;
 }
 
-/* input[type=btn]{
-
-  cursor: pointer;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.65rem;
-  font-weight: bold;
-  letter-spacing: 0.025rem;
-  text-transform: uppercase;
-  color: white;
-  background-color: black;
-  border: none;
-}
-
-input[type=btn]:hover{
-  background-color: #0d0d0d;
-}
-
-input[type=btn]:focus{
-  outline: 1px dashed yellow;
-  outline-offset: 3px;
-
-} */
-
 .btn {
   cursor: pointer;
   margin-top: 1.5rem;
@@ -246,9 +228,6 @@ input[type=btn]:focus{
   background-color: black;
   border: none;
 }
-
-
-
 .btn:hover {
   background-color: #0d0d0d;
 }
