@@ -38,6 +38,11 @@ export class BookingComponent implements OnInit {
 
    }
 
+
+   bookingConfirm(){
+    this.router.navigate(['/confirm-booking']);
+  }
+
   ngOnInit() {
 
     this.serviceName = localStorage.getItem("serviceName");

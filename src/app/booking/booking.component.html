@@ -21,7 +21,7 @@
 
 			<div class="service-cell">
 				<div class="service-img">
-				 <img src="\assets\painter.jpg" class="service-photo">
+				 <img src="https://zaroorat-app.s3.ap-south-1.amazonaws.com/painter.jpg" class="service-photo">
 				</div>
 				<div class="service-content">
 				 <div class="service-title" >Name: {{p.name}}</div>
@@ -46,7 +46,7 @@
 				  </fieldset>
 				  <span class="service-voters">{{p.rating}}</span>
 				 <!-- <div class="service-sum">Has 10 years of experience and has excellent reiews.</div> -->
-				 <div class="service-see">Book for service</div>
+				 <div class="service-see" (click)="bookingConfirm()">Book for service</div>
 			   </div>
 
 			<!-- <p class="profile-ratings">
