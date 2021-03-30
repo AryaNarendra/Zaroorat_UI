@@ -4,7 +4,8 @@
 	<div align="center" class="page-intro">
 	<h2><b>Aapki Sewa Mein...</b></h2></div> -->
 	<div class="logo" ></div></h1>
-	<h2><div class="page-intro"><b> Aapki sewa mein...</b></div></h2>
+	<h2><div class="page-intro"><b> Aapki sewa mein...</b>
+		<div class="login"><b>Register as Professional / Customer</b></div></div></h2>
 	<input  type="text" class="form-control" name="search"  placeholder="Search for services.." [(ngModel)]="searchString"/>
 
 <main class="page-content">
@@ -14,7 +15,6 @@
 			<i class="fas fa-paint-roller col-yellow"></i></p>
 	  <div class="content">
 	
-		
 		<h2 class="title">{{service.serviceName}}</h2>
 		<p class="copy"></p>
 		<button class="btn" (click)="book(service.serviceId, service.serviceName)">Book Now</button>
@@ -82,7 +82,7 @@
   
   </main>
 
-</div> -->
+</div>
 
 
 
