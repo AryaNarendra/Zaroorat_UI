@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Services } from '@angular/core/src/view';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import 'rxjs/Rx';
@@ -12,6 +13,9 @@ import { professionalPojo } from '../professionalPojo';
   styleUrls: ['./booking.component.css']
 })
 export class BookingComponent implements OnInit {
+
+  services : Services[];
+
   serviceId : string;
   serviceName : string;
 
@@ -40,7 +44,11 @@ export class BookingComponent implements OnInit {
 
 
    bookingConfirm(){
-    this.router.navigate(['/confirm-booking']);
+    document.getElementById("myForm").style.display = "block";
+    // this.router.navigate(['/confirm-booking']);
+  }
+  closeForm(){
+    document.getElementById("myForm").style.display = "none";
   }
 
   ngOnInit() {
