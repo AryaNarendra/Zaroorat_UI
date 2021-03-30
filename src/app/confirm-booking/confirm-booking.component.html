@@ -1,0 +1,22 @@
+<div class="body"></div>
+<div class="header">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+
+            <label><b>Vendor Id : </b></label>
+            <input type="number" name="venId" [(ngModel)]="vendId"/><br/> 
+
+            <label><b>Order Id : </b></label>
+            <input type="number" name="ordId" [(ngModel)]="orderId"/><br/> 
+            
+            <label><b>Comments : </b></label>
+            <input type="text" name="status" [(ngModel)]="comments"/><br/> 
+
+            <input type="button" value="Accept" (click)="accept()"/><br>
+            <input type="button" value="Reject" (click)="reject()"/><br>
+
+            <p>{{result}}</p>
+
+</div>
+</div>

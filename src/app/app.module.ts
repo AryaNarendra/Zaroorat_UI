@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServicesearchPipe } from './servicesearch.pipe';
 import { BookingComponent } from './booking/booking.component';
 import { ProfessionalService } from './professional.service';
+import { ConfirmBookingComponent } from './confirm-booking/confirm-booking.component';
 
 const appRoutes: Routes = [
   {path:'customer',component:CustomerComponent,
@@ -29,7 +30,8 @@ children : [   ]},
 {path:'',component:DashboardComponent},
 {path:'login-customer',component:LoginCustomerComponent},
 {path:'login-vendor',component:LoginProfessionalComponent},
-{path:'booking',component:BookingComponent}
+{path:'booking',component:BookingComponent},
+{path: 'confirm-booking', component: ConfirmBookingComponent}
   // {
   //     path: 'dashboard',
   //     component: DashboardComponent
@@ -48,7 +50,8 @@ children : [   ]},
     ProfessionalHistoryComponent,
     HeaderComponent,
     ServicesearchPipe,
-    BookingComponent
+    BookingComponent,
+    ConfirmBookingComponent
   ],
   imports: [
     BrowserModule,
