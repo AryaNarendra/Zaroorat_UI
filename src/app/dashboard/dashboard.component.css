@@ -174,7 +174,7 @@ body {
   background-size: 300px 300px;
 }
 .card:nth-child(6):before {
-background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/electrician.jpg");
+background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/electrician.png");
 background-size: 300px 250px;
 }
 
