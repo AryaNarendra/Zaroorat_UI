@@ -155,7 +155,7 @@ body {
   background-size: 250px 250px;
 }
 .card:nth-child(3):before {
-  background-image: url("/assets/acrepair.png");
+  background-image: url("https://zaroorat-app.s3.ap-south-1.amazonaws.com/acrepair.png");
   background-size: 300px 250px;
 }
 .card:nth-child(4):before {
