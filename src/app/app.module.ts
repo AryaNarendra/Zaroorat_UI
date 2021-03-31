@@ -31,7 +31,8 @@ children : [   ]},
 {path:'login-customer',component:LoginCustomerComponent},
 {path:'login-vendor',component:LoginProfessionalComponent},
 {path:'booking',component:BookingComponent},
-{path: 'confirm-booking', component: ConfirmBookingComponent}
+{path: 'confirm-booking', component: ConfirmBookingComponent},
+{path:'dashboard',component:DashboardComponent}
   // {
   //     path: 'dashboard',
   //     component: DashboardComponent
