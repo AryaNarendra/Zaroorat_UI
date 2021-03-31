@@ -32,7 +32,10 @@ children : [   ]},
 {path:'login-vendor',component:LoginProfessionalComponent},
 {path:'booking',component:BookingComponent},
 {path: 'confirm-booking', component: ConfirmBookingComponent},
+  
+{path: 'customer-history', component: CustomerHistoryComponent}
 {path:'dashboard',component:DashboardComponent}
+
   // {
   //     path: 'dashboard',
   //     component: DashboardComponent

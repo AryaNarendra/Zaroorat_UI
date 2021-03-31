@@ -39,7 +39,6 @@ export class BookingComponent implements OnInit {
      
       });
 
-
    }
 
 
@@ -51,6 +50,11 @@ export class BookingComponent implements OnInit {
     document.getElementById("myForm").style.display = "none";
   }
 
+  
+  bookinghistory(){
+    this.router.navigate(['/customer-history']);
+
+  }
   ngOnInit() {
 
     this.serviceName = localStorage.getItem("serviceName");
