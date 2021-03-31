@@ -1,3 +1,284 @@
-<p>
-  customer-history works!
-</p>
+<<<<<<< HEAD
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+    
+      </ul>
+      <ul class="navbar-nav" style="float:right;">
+        <li class="nav-item">
+          <!-- <a class="nav-link" (click)="logout()"><i class="fa fa-sign-out-alt"></i>Logout</a> -->
+          <button type="button" class="btnlogout" (click)="logout()">Logout</button>
+
+        </li>
+      </ul>
+      <ul class="navbar-nav" style="float:right;">
+        <li class="nav-item">
+          <!-- <a class="nav-link" (click)="back()"><i class="fa fa-sign-out-alt"></i>Back</a> -->
+          <button type="button" class="btnback" (click)="back()">Back</button>
+
+        </li>
+      </ul>
+ 
+  
+  <section class="content">
+    <div class="container-fluid">
+      <div class="block-header">
+        <div class="row">
+          <div class="col-lg-12 col-md-6 col-sm-7">
+           
+          </div>
+        </div>
+      </div>
+  
+      <div class="row inside">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card">
+  
+            <div class="body">
+  
+              <div class="container-fluid">
+               
+                <div class="row inside">
+                  <div class="col-3">
+                    <h2>Customer History</h2>
+                  </div>
+  
+                  <div class="col-4">
+                    <div class="input-group col-md-8">
+                      <span class="input-group-append">
+                </span>
+                    </div>
+                  </div>
+  
+  
+                  <table class="table">
+                    <thead class="thead-light">
+                      <tr>
+  
+                        <th scope="col">ORDER DATE</th>
+                        <th scope="col">SERVICE DATE</th>
+                        <th scope="col">SERVICE</th>
+                        <th scope="col">PROFESSIONAL NAME</th>
+                      
+                        <th scope="col">STATUS</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+  
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                      </tr>
+                      <tr>
+  
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                      </tr>
+                      <tr>
+  
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                       <!-- <td>
+                          Draft
+                        </td>
+                        <td class="actions"><a href="#">Delete Order</a></td>-->
+                      </tr>
+                    </tbody>
+                  </table>
+  
+                  
+                </div>
+              
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+=======
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
+  <a class="navbar-brand" href="#">
+    <img src="https://s3.amazonaws.com/fzautomotive/dealers/5b60fa63175d1.png" width="auto" height="40" alt=""> 
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Admin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Users</a>
+          <a class="dropdown-item" href="#">My Sites</a>
+          <a class="dropdown-item" href="#">QR Code</a>
+          <a class="dropdown-item" href="#">Create ES Indices</a>
+          <a class="dropdown-item" href="#">DNS</a>
+          <a class="dropdown-item" href="#">SSL</a>
+          <a class="dropdown-item" href="#">Servers</a>
+          <a class="dropdown-item" href="#">Sites</a>
+          <a class="dropdown-item" href="#">Site Groups</a>
+          <a class="dropdown-item" href="#">Site Speed</a>
+
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Inventory
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Inventory</a>
+          <a class="dropdown-item" href="#">Manage Inventory</a>
+          <a class="dropdown-item" href="#">Vehicle Source</a>
+          <a class="dropdown-item" href="#">Vehicle</a>
+          <a class="dropdown-item" href="#">VIN Analysis</a>
+          <a class="dropdown-item" href="#">VIN Decode</a>
+
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Data Conversion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Import Overrides</a>
+          <a class="dropdown-item" href="#">Price Schema</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav" style="float:right;">
+      <li class="nav-item">
+        <a class="nav-link" href="/admin"><i class="fa fa-sign-out-alt"></i>Logout</a>
+      </li>
+    </ul>
+    </div>
+</nav>
+
+<section class="content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-lg-12 col-md-6 col-sm-7">
+          <h2>Price Data Conversion Dashboard</h2>
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);">Data Conversion</a></li>
+            <li class="breadcrumb-item active">Price Schema</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row inside">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+
+          <div class="body">
+
+            <div class="container-fluid">
+              <div class="row"><div class ="col back"><a href="#"><i class="fas fa-arrow-left"></i> Back</a></div></div>
+              <div class="row inside">
+                <div class="col-3">
+                  <h2>Change History</h2>
+                </div>
+
+                <div class="col-4">
+                  <div class="input-group col-md-8">
+                    <input class="form-control py-2 border-right-0 border" type="search" value="search" id="example-search-input">
+                    <span class="input-group-append">
+                <button class="btn btn-outline-secondary border-left-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+              </span>
+                  </div>
+                </div>
+
+
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+
+                      <th scope="col">TIME</th>
+                      <th scope="col">MODIFY BY</th>
+                      <th scope="col">DESCRIPTION</th>
+                    
+                      <th scope="col">STATUS</th>
+                      <th scope="col">ACTIONS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+                      <td>May 2, 2018 @ 14:30:54</td>
+                      <td>Stephanie</td>
+                      <td>added a rule a</td>
+                     
+                      <td>
+                        Published
+                      </td>
+                      <td class="actions"><a href="#">Publish</a></td>
+                    </tr>
+                    <tr>
+
+                      <td>May 2, 2018 @ 14:27:27</td>
+                      <td>Alex</td>
+                      <td>ticket 1234</td>
+                   
+                      <td>
+                        Draft
+                      </td>
+                     <td class="actions"><a href="#">Publish</a></td>
+                    </tr>
+                    <tr>
+
+                      <td>August 3, 2018 @ 12:53:35</td>
+                      <td>Di</td>
+                      <td>ticket 567</td>
+                   
+                      <td>
+                        Draft
+                      </td>
+                      <td class="actions"><a href="#">Publish</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                
+              </div>
+            <div class ="col">
+                   <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li> 
+                   </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+>>>>>>> d2099591cf9fcf7c8e1c3bb3a777f978635cf478

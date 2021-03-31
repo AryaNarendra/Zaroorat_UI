@@ -1,84 +1,108 @@
-<!-- 
-<div class="body"></div>
-<div class="header">
-    
-    <p>Welcome to Canteen</p>
 
-    <a [routerLink]="['login-customer']">Login/Sign Up</a>
-    &nbsp;&nbsp;&nbsp;
-    <a [routerLink]="['login-professional']">Login As A Professional</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-<router-outlet></router-outlet>
-</div> -->
+<div class="back" ><h1>
+	<!-- <div align="center" class="logo" ></div></h1>
+	<div align="center" class="page-intro">
+	<h2><b>Aapki Sewa Mein...</b></h2></div> -->
+	<div class="logo" ></div></h1>
+	<h2><div class="page-intro"><b> Aapki sewa mein...</b>
+		<div class="login" (click)="login()"><b>Register as Professional / Customer</b></div></div></h2>
+	<input  type="text" class="form-control" name="search"  placeholder="Search for services.." [(ngModel)]="searchString"/>
 
-
-<!--
-
-Follow me on
-Dribbble: https://dribbble.com/supahfunk
-Twitter: https://twitter.com/supahfunk
-Codepen: https://codepen.io/supah/
-
--->
-
-<div class="logo_of_company"></div>
-
-<header> <div class="site-logo">
-    <img src="assets/img/logo.png" alt="logo"> 
-    </div> 
-    <nav> 
-    </nav> 
-    </header> 
-    
-
-
-<h2>Aapki seva mai</h2>
-
-
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
+<main class="page-content">
+	
+	<div class="card" *ngFor="let service of services | servicesearch :  {serviceName : searchString}; let i = index">
+		<p class="profile-ratings">
+			<i class="fas fa-paint-roller col-yellow"></i></p>
+	  <div class="content">
+	
+		<h2 class="title">{{service.serviceName}}</h2>
+		<p class="copy"></p>
+		<button class="btn" (click)="book(service.serviceId, service.serviceName)">Book Now</button>
+	  </div>
 	</div>
-	<div class="overlay-container">
-		<form action="#">
-			<h1>Sign in</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
+	
+
+	<!-- <div class="card">
+	  <div class="content">
+		<h2 class="title">Plumber</h2>
+		<p class="copy"> </p>
+		<button class="btn">Book Now</button>
+	  </div>
 	</div>
-	<div class="form-container sign-in-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>About Us</h1>
-				<p>Enter your Company details here</p>
-			</div>
+	<div class="card">
+	  <div class="content">
+		<h2 class="title">AC Repair</h2>
+		<button class="btn">Book Now</button>
+	  </div>
+	</div>
+	<div class="card">
+	  <div class="content">
+		<h2 class="title">Carpainter</h2>
+		<p class="copy"></p>
+		<button class="btn">Book Now</button>
+	  </div>
+	</div>
+
+
+	<div class="card">
+		<div class="content">
+		  <h2 class="title">Maid</h2>
+		  <p class="copy"></p>
+		  <button class="btn">Book Now</button>
 		</div>
-	</div>
+	  </div>
+
+
+	  <div class="card">
+		<div class="content">
+		  <h2 class="title">Electrician</h2>
+		  <p class="copy"></p>
+		  <button class="btn">Book Now</button>
+		</div>
+	  </div>
+
+
+	  <div class="card">
+		<div class="content">
+		  <h2 class="title">Milkman</h2>
+		  <p class="copy"></p>
+		  <button class="btn">Book Now</button>
+		</div>
+	  </div>
+
+	  <div class="card">
+		<div class="content">
+		  <h2 class="title">Pestcontrol</h2>
+		  <p class="copy"></p>
+		  <button class="btn">Book Now</button>
+		</div>
+	  </div> -->
+
+
+  
+  </main>
+
 </div>
+
+
+
+
+<!-- - var cards = [{ title: 'Mountain View', button: 'View Trips' }, { title: 'To The Beach', button: 'View Trips'}, 
+{ title: 'Desert Destinations',  button: 'Book Now' }, { title: 'Explore The Galaxy', button: 'Book Now' }]
+
+
+mixin card(title, copy, button)
+  .card
+    .content
+      h2.title= title
+      p.copy= copy
+      button.btn= button
+
+main.page-content
+  each card in cards
+    +card(card.title, card.copy, card.button) -->
+
+
+
+
 

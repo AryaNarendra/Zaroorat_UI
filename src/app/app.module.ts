@@ -14,13 +14,25 @@ import { LoginProfessionalComponent } from './login-professional/login-professio
 import { CustomerHistoryComponent } from './customer-history/customer-history.component';
 import { ProfessionalHistoryComponent } from './professional-history/professional-history.component';
 import { HeaderComponent } from './header/header.component';
+import { ZarooratService } from './zaroorat.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ServicesearchPipe } from './servicesearch.pipe';
+import { BookingComponent } from './booking/booking.component';
+import { ProfessionalService } from './professional.service';
+import { ConfirmBookingComponent } from './confirm-booking/confirm-booking.component';
 
 const appRoutes: Routes = [
-  {
-      path: '',
-      pathMatch: 'full',
-      component: DashboardComponent
-  } 
+  {path:'customer',component:CustomerComponent,
+children : [   ]},
+{path:'professional',component:ProfessionalComponent,
+children : [   ]},
+
+{path:'',component:DashboardComponent},
+{path:'login-customer',component:LoginCustomerComponent},
+{path:'login-vendor',component:LoginProfessionalComponent},
+{path:'booking',component:BookingComponent},
+{path: 'confirm-booking', component: ConfirmBookingComponent},
+{path: 'customer-history', component: CustomerHistoryComponent}
   // {
   //     path: 'dashboard',
   //     component: DashboardComponent
@@ -37,15 +49,22 @@ const appRoutes: Routes = [
     LoginProfessionalComponent,
     CustomerHistoryComponent,
     ProfessionalHistoryComponent,
-    HeaderComponent
+    HeaderComponent,
+    ServicesearchPipe,
+    BookingComponent,
+    ConfirmBookingComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ZarooratService, ProfessionalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+

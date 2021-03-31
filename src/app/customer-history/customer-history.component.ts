@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer-history',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerHistoryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
+  back(){
+    this.router.navigate(['/booking']);
+
+  }
+
+  logout(){    
+    this.router.navigate(['']);
+}
   ngOnInit() {
   }
 
