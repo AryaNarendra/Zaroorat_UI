@@ -57,14 +57,12 @@ body {
   text-align: right;
 }
 .login{
-  color:rgb(247, 247, 252);
   font-style: italic;
   font-weight: 200;
-  font-size: 25px;
-  margin-bottom: 100px;
-  padding-top: 10px;
-  padding-left:700px;
+  font-size: 23px;
+  padding-left:900px;
   cursor:pointer;
+  margin-top: -40px;
 }
 .form-control{
   color:rgb(3, 3, 3);

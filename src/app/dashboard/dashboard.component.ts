@@ -23,6 +23,11 @@ export class DashboardComponent implements OnInit {
     // console.log(serviceName);
   }
 
+  login(){
+    this.router.navigate(['/login-customer']);
+
+  }
+
   ngOnInit() {
 
     this.zarooratService.getServices().subscribe((data: Services[])=>{
