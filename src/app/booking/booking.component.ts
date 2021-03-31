@@ -50,6 +50,7 @@ export class BookingComponent implements OnInit {
     document.getElementById("myForm").style.display = "none";
   }
 
+  
   bookinghistory(){
     this.router.navigate(['/customer-history']);
 
